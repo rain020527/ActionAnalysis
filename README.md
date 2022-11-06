@@ -3,9 +3,9 @@ Master's Research
 # Action analysis using the skeleton detection and shuttlecock trajectory
 
 ## Contects
-1. [File Description](#File Description)
+1. [File Description](#File-Description)
 2. [Demo](#Demo)
-3. [Implement Different Action](#Implement Different Action)
+3. [Implement Different Action](#Implement-Different-Action)
 
 ## File Description
 
