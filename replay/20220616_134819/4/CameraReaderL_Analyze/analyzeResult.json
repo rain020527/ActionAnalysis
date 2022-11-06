@@ -1,0 +1,103 @@
+{
+    "tstart": {
+        "knee_sqaut": {
+            "text": "膝蓋微彎:",
+            "value": {
+                "RKnee_angle": {
+                    "text": "右膝蓋彎曲:",
+                    "value": 153.202864035241
+                },
+                "LKnee_angle": {
+                    "text": "左膝蓋彎曲:",
+                    "value": 147.7593326846119
+                }
+            },
+            "pass": false
+        },
+        "feet_shoulder_same_width": {
+            "text": "雙腳與肩同寬:",
+            "value": {
+                "feet_width": {
+                    "text": "雙腳寬:",
+                    "value": 0.2844708698583438
+                },
+                "shoulder_width": {
+                    "text": "肩膀寬:",
+                    "value": 0.327303622726114
+                }
+            },
+            "pass": true
+        },
+        "two_hand_front_body": {
+            "text": "雙手於胸前方:",
+            "pass": true
+        },
+        "lean_angle": {
+            "text": "身體微微前傾:",
+            "value": 11.606862845463315,
+            "pass": true
+        },
+        "frame": 64,
+        "score": {
+            "text": "總評:",
+            "value": 75
+        }
+    },
+    "tready": {
+        "two_arm_angle": {
+            "text": "雙臂展開:",
+            "value": 143.46714591641228,
+            "pass": true
+        },
+        "step": {
+            "text": "慣用腳在後:",
+            "pass": true
+        },
+        "elbow_higher_than_shoulder": {
+            "text": "非慣用手肘高於肩:",
+            "pass": false
+        },
+        "frame": 182,
+        "score": {
+            "text": "總評:",
+            "value": 66
+        }
+    },
+    "tstrike": {
+        "strike_angle": {
+            "text": "擊球角:",
+            "pass": true,
+            "value": 51.737131891596846
+        },
+        "elbow_angle": {
+            "text": "手肘張開:",
+            "pass": true,
+            "value": 150.05228489351325
+        },
+        "speed": {
+            "text": "最高球速:",
+            "pass": false,
+            "value": 93.94831782197642
+        },
+        "frame": 213,
+        "score": {
+            "text": "總評:",
+            "value": 66
+        }
+    },
+    "tend": {
+        "Rwrist_front_LHip": {
+            "text": "持拍手收回腹部:",
+            "pass": true
+        },
+        "step": {
+            "text": "順勢跨步前進:",
+            "pass": true
+        },
+        "frame": 317,
+        "score": {
+            "text": "總評:",
+            "value": 100
+        }
+    }
+}
