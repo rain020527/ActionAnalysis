@@ -1,7 +1,6 @@
 # ActionAnalysis
-Master's Research
-# Action analysis using the skeleton detection and shuttlecock trajectory
 
+![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png)
 ## Contects
 1. [File Description](#File-Description)
 2. [Demo](#Demo)
