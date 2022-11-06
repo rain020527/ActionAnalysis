@@ -7,7 +7,7 @@
 3. [Implement Different Action](#Implement-Different-Action)
 
 ## File Description
-
+ActionAnalyst folder includes different types of action analysis, and the ActionAnalyst/lib folder is the core codes that do the skeleton detection (PklGenerator.py) and construct the analysis base class (VibePklParser). The folder replay includes the data we collect by CoachBox or another webcam. If you want to use another webcam data, , you need to prepare the camera parameters, the csv file of the ball trajectory to execute the demo correctly. The folder lib and VIBE is a library that provide the function to process the camera config and skeleton detection.
 
 ## Demo
 Run the main.py, that includes two modules: 1. PklGenerator.py that can get the skeletons information of VIBE. 2. Smash_VibePklParser.py that analyzes the action.
@@ -21,4 +21,6 @@ You can use the CoachBox replay feature to see the analysis result or check the 
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/UI.png)
 
 ## Implement Different Action
-Such as high ball, you can implement the key frame detection algorithm and evalution algorithm by inheriting class VibePklParser. You need to implement two virtual function: 1. time_slice(), that is your key frame detection algorithm, and return the tuple of the key frame number. 2. run(), that is the evaluation algorithm to analyze the postures and movements. You can also refer to the ActionAnalyst/High folder that we provide to implement the action analysis you want.
+Such as high ball, you can implement the key frame detection algorithm and evalution algorithm by inheriting class VibePklParser. You need to implement two virtual function: 
+1. time_slice(), that is your key frame detection algorithm, and return the tuple of the key frame number.
+2. run(), that is the evaluation algorithm to analyze the postures and movements. You can also refer to the ActionAnalyst/High folder that we provide to implement the action analysis you want.
