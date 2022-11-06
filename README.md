@@ -1,4 +1,5 @@
 # ActionAnalysis
+Sport action analysis can enable athletes to do more correct actions, but it takes too long to develop algorithms for each action. The action analysis framework is proposed to systematically evaluate the different types of sports actions. The entire framework consists of four structured modules, including data extraction, key frame detection, posture evaluation, and movement evaluation. Besides, integrate many common action features and encapsulate into functions to reduce development time. The framework is implemented on an application named CoachBox to evaluate the learner's action and increase sports learning effectiveness. This device can automatically analyze the action through deep learning without any sensor. In addition, a coordinate transform method is provided to convert skeleton coordinates to real-world coordinates for visualization.
 
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png)
 ## Contects
@@ -31,5 +32,5 @@ Such as high ball, you can implement the key frame detection algorithm and evalu
 There is a function get3DSKP_court(self, fid, keypoint_idx) in VibePklParser.py. This function output 3D coordinate of pose keypoint in court coordinate space, and you just input the frame index and the keypoint index in self.getJointNames. The principle of this function is as follows: 
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/court_transform.png)
 
-This is the result of court transform. The origin of the court coordinate system is at the center of the stadium, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. 
+This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. 
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png)
