@@ -32,5 +32,5 @@ Such as high ball, you can implement the key frame detection algorithm and evalu
 There is a function get3DSKP_court(self, fid, keypoint_idx) in VibePklParser.py. This function output 3D coordinate of pose keypoint in court coordinate space, and you just input the frame index and the keypoint index in self.getJointNames. The principle of this function is as follows: 
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/court_transform.png)
 
-This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. 
+This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. So the coordinate of the people will fall around X=2.5, Y=6.7(has a little error), Z=human height.
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png)
