@@ -7,6 +7,7 @@ Sport action analysis can enable athletes to do more correct actions, but it tak
 2. [Demo](#Demo)
 3. [Implement Different Action](#Implement-Different-Action)
 4. [Court Coordinate System Transform](#Court Coordinate System Transform)
+5. [The Result After Coordinate Transformation](#The Result After Coordinate Transformation)
 
 ## File Description
 ActionAnalyst folder includes different types of action analysis, and the ActionAnalyst/lib folder is the core codes that do the skeleton detection (PklGenerator.py) and construct the analysis base class (VibePklParser). The folder replay includes the data we collect by CoachBox or another webcam. If you want to use another webcam data, , you need to prepare the camera parameters, the csv file of the ball trajectory to execute the demo correctly. The folder lib and VIBE is a library that provide the function to process the camera config and skeleton detection.
@@ -29,9 +30,10 @@ Such as high ball, you can implement the key frame detection algorithm and evalu
 1. time_slice(), that is your key frame detection algorithm, and return the tuple of the key frame number.
 2. run(), that is the evaluation algorithm to analyze the postures and movements. You can also refer to the ActionAnalyst/High folder that we provide to implement the action analysis you want.
 
-## Court Coordinate System Transform
+## Court Coordinate System Transformation
 There is a function get3DSKP_court(self, fid, keypoint_idx) in VibePklParser.py. This function output 3D coordinate of pose keypoint in court coordinate space, and you just input the frame index and the keypoint index in self.getJointNames. The principle of this function is as follows: 
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/court_transform.png)
 
+## The Result After Coordinate Transformation
 This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. So the coordinate of the people will fall around X=2.5, Y=6.7(has a little error), Z=human height.
 ![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png)
