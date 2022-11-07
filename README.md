@@ -23,7 +23,7 @@ $ python3 main.py --camera_cfg ../../replay/20220616_134819/4/28124278.cfg --out
 ```
 The result will store in ../../replay/20220616_134819/4/CameraReaderL_Analyze/analyzeResult.json
 You can use the CoachBox replay feature to see the analysis result or check the json file.
-![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/UI.png)
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/UI.png" width="50%"/>
 
 ## Implement Different Action
 Such as high ball, you can implement the key frame detection algorithm and evalution algorithm by inheriting class VibePklParser. You need to implement two virtual function: 
@@ -32,8 +32,8 @@ Such as high ball, you can implement the key frame detection algorithm and evalu
 
 ## Court Coordinate System Transformation
 There is a function get3DSKP_court(self, fid, keypoint_idx) in VibePklParser.py. This function output 3D coordinate of pose keypoint in court coordinate space, and you just input the frame index and the keypoint index in self.getJointNames. The principle of this function is as follows: 
-![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/court_transform.png)
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/court_transform.png" width="50%"/>
 
 ## The Result After Coordinate Transformation
 This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. So the coordinate of the people will fall around X=2.5, Y=6.7(has a little error), Z=human height.
-![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png =50%*50%)
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png" width="50%"/>
