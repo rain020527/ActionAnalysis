@@ -36,4 +36,4 @@ There is a function get3DSKP_court(self, fid, keypoint_idx) in VibePklParser.py.
 
 ## The Result After Coordinate Transformation
 This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. So the coordinate of the people will fall around X=2.5, Y=6.7(has a little error), Z=human height.
-![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png){:height="50%" width="50%"}
+![Image text](https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png =50%*50%)
