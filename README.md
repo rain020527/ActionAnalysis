@@ -1,6 +1,8 @@
 # ActionAnalysis
 Sport action analysis can enable athletes to do more correct actions, but it takes too long to develop algorithms for each action. The action analysis framework is proposed to systematically evaluate the different types of sports actions. The entire framework consists of four structured modules, including data extraction, key frame detection, posture evaluation, and movement evaluation. Besides, integrate many common action features and encapsulate into functions to reduce development time. The framework is implemented on an application named CoachBox to evaluate the learner's action and increase sports learning effectiveness. This device can automatically analyze the action through deep learning without any sensor. In addition, a coordinate transform method is provided to convert skeleton coordinates to real-world coordinates for visualization.
 
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png" width="80%"/>
+
 ## Resource Link
 ### Demo Video
 [FUTEX2021 - The clip of TV interview](https://www.youtube.com/watch?v=3iLHowULkU8&ab_channel=USTV%E9%9D%9E%E5%87%A1%E9%9B%BB%E8%A6%96)
@@ -13,12 +15,9 @@ Sport action analysis can enable athletes to do more correct actions, but it tak
 https://github.com/rain020527/ActionAnalysis
 
 ### Dataset Link
-
+[TODO]
 ### Master Thesis
-
-
-<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png" width="80%"/>
-
+[TODO]
 
 ## Contects
 1. [Source File Description](#Source-File-Description)
@@ -73,11 +72,13 @@ The result will store in ../../replay/20220616_134819/4/CameraReaderL_Analyze/an
 You can use the CoachBox replay feature to see the analysis result or check the json file.
 
 - Key Frame Detection, Posture and Movement Evaluation
-In a series of actions, there are usually several time points that are representative. This study tries to identify these key frames automatically, and evaluate the posture and movement to measure whether the action is standard. 
+In a series of actions, there are usually several time points that are representative. This study tries to identify these key frames automatically, and evaluate the posture and movement to measure whether the action is standard.
+
 <img src=https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/Smash_framework.png" width="75%"/>
 
 - Analysis Result(json file)
-Can see the analysis result, such as the right knee angle is 148 degrees and the left knee angle is 163 degrees. Feet width vs shoulder width that can evaluate whether the start posture is wrong.                                                               
+Can see the analysis result, such as the right knee angle is 148 degrees and the left knee angle is 163 degrees. Feet width vs shoulder width that can evaluate whether the start posture is wrong.
+                                                                                                           
 <img src=https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/report.png" width="75%"/>
 
 
