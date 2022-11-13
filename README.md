@@ -3,21 +3,53 @@ Sport action analysis can enable athletes to do more correct actions, but it tak
 
 ## Resource Link
 ### Demo Video
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/"YOUR_VIDEO_ID"/0.jpg)](https://www.youtube.com/watch?v="3iLHowULkU8" "Futex")
-{%youtube nyMEjmVBgJs %}	
-{%youtube Gx80Wrej4nM %}
+FUTEX2021 - The clip of TV interview: https://www.youtube.com/watch?v=3iLHowULkU8&ab_channel=USTV%E9%9D%9E%E5%87%A1%E9%9B%BB%E8%A6%96
+FUTEX2021 - Introduction of CoachBox: https://www.youtube.com/watch?v=nyMEjmVBgJs&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech
+FUTEX2021 - Conference: https://www.youtube.com/watch?v=Gx80Wrej4nM&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech
+
+### Github Link
+https://github.com/rain020527/ActionAnalysis
+
+### Dataset Link
+
+### Master Thesis
+
+
 <img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png" width="80%"/>
 
 
 ## Contects
-1. [File Description](#File-Description)
-2. [Demo](#Demo)
-3. [Implement Different Action](#Implement-Different-Action)
-4. [Court Coordinate System Transform](#Court-Coordinate-System-Transform)
-5. [The Result After Coordinate Transformation](#The-Result-After-Coordinate-Transformation)
+1. [Source File Description](#Source-File-Description)
+2. [Installation](#Installation)
+3. [Demo](#Demo)
+4. [Implement Different Action](#Implement-Different-Action)
+5. [Court Coordinate System Transform](#Court-Coordinate-System-Transform)
+6. [The Result After Coordinate Transformation](#The-Result-After-Coordinate-Transformation)
 
-## File Description
-ActionAnalyst folder includes different types of action analysis, and the ActionAnalyst/lib folder is the core codes that do the skeleton detection (PklGenerator.py) and construct the analysis base class (VibePklParser). The folder replay includes the data we collect by CoachBox or another webcam. If you want to use another webcam data, , you need to prepare the camera parameters, the csv file of the ball trajectory to execute the demo correctly. The folder lib and VIBE is a library that provide the function to process the camera config and skeleton detection.
+## Source File Description
+1. ActionAnalyst folder includes different types of action analysis
+2. ActionAnalyst/lib folder is the core codes that do the skeleton detection (PklGenerator.py) and construct the analysis base class (VibePklParser). 
+3. The folder replay includes the data we collect by CoachBox or another webcam. If you want to use another webcam data, , you need to prepare the camera parameters, the csv file of the ball trajectory to execute the demo correctly.
+4.  The folder lib and VIBE is a library that provide the function to process the camera config and skeleton detection.
+
+## Installation
+The test environment is ubuntu 18.04, python3.8 version.
+1. Install the VIBE: you can refer to the original VIBE github to download. https://github.com/mkocabas/VIBE
+```
+git clone https://github.com/mkocabas/VIBE.git
+source scripts/install_pip.sh
+source scripts/prepare_data.sh
+```
+
+2. Install the other library:
+```
+pip3 install joblib
+pip3 install numpy
+pip3 install opencv-python
+pip3 install jsons
+pip3 install pandas
+pip3 install mysqlclient
+```
 
 ## Demo
 Run the main.py, that includes two modules: 
