@@ -3,11 +3,11 @@ Sport action analysis can enable athletes to do more correct actions, but it tak
 
 ## Resource Link
 ### Demo Video
-FUTEX2021 - The clip of TV interview: https://www.youtube.com/watch?v=3iLHowULkU8&ab_channel=USTV%E9%9D%9E%E5%87%A1%E9%9B%BB%E8%A6%96
+[FUTEX2021 - The clip of TV interview](https://www.youtube.com/watch?v=3iLHowULkU8&ab_channel=USTV%E9%9D%9E%E5%87%A1%E9%9B%BB%E8%A6%96)
 
-FUTEX2021 - Introduction of CoachBox: https://www.youtube.com/watch?v=nyMEjmVBgJs&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech
+[FUTEX2021 - Introduction of CoachBox](https://www.youtube.com/watch?v=nyMEjmVBgJs&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech)
 
-FUTEX2021 - Conference: https://www.youtube.com/watch?v=Gx80Wrej4nM&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech
+[FUTEX2021 - Conference: CoachBox Visualized badminton hitting action analysis plan](https://www.youtube.com/watch?v=Gx80Wrej4nM&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech)
 
 ### Github Link
 https://github.com/rain020527/ActionAnalysis
@@ -39,17 +39,24 @@ The test environment is ubuntu 18.04, python3.8 version.
 1. Install the VIBE: you can refer to the original VIBE github to download. https://github.com/mkocabas/VIBE
 ```
 git clone https://github.com/mkocabas/VIBE.git
+
 source scripts/install_pip.sh
+
 source scripts/prepare_data.sh
 ```
 
 2. Install the other library:
 ```
 pip3 install joblib
+
 pip3 install numpy
+
 pip3 install opencv-python
+
 pip3 install jsons
+
 pip3 install pandas
+
 pip3 install mysqlclient
 ```
 
