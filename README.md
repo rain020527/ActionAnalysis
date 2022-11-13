@@ -4,7 +4,9 @@ Sport action analysis can enable athletes to do more correct actions, but it tak
 ## Resource Link
 ### Demo Video
 FUTEX2021 - The clip of TV interview: https://www.youtube.com/watch?v=3iLHowULkU8&ab_channel=USTV%E9%9D%9E%E5%87%A1%E9%9B%BB%E8%A6%96
+
 FUTEX2021 - Introduction of CoachBox: https://www.youtube.com/watch?v=nyMEjmVBgJs&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech
+
 FUTEX2021 - Conference: https://www.youtube.com/watch?v=Gx80Wrej4nM&ab_channel=%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80%E9%A4%A8FUTEX-FutureTech
 
 ### Github Link
@@ -27,10 +29,10 @@ https://github.com/rain020527/ActionAnalysis
 6. [The Result After Coordinate Transformation](#The-Result-After-Coordinate-Transformation)
 
 ## Source File Description
-1. ActionAnalyst folder includes different types of action analysis
-2. ActionAnalyst/lib folder is the core codes that do the skeleton detection (PklGenerator.py) and construct the analysis base class (VibePklParser). 
-3. The folder replay includes the data we collect by CoachBox or another webcam. If you want to use another webcam data, , you need to prepare the camera parameters, the csv file of the ball trajectory to execute the demo correctly.
-4.  The folder lib and VIBE is a library that provide the function to process the camera config and skeleton detection.
+1. "ActionAnalyst" folder includes different types of action analysis
+2. "ActionAnalyst/lib" folder is the core codes that do the skeleton detection (PklGenerator.py) and construct the analysis base class (VibePklParser). 
+3. The folder "replay" includes the data we collect by CoachBox or another webcam. If you want to use another webcam data, , you need to prepare the camera parameters, the csv file of the ball trajectory to execute the demo correctly.
+4.  The folder "lib" and "VIBE" is a library that provide the function to process the camera config and skeleton detection.
 
 ## Installation
 The test environment is ubuntu 18.04, python3.8 version.
