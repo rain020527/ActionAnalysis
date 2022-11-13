@@ -3,7 +3,7 @@ Sport action analysis can enable athletes to do more correct actions, but it tak
 
 ## Resource Link
 ### Demo Video
-{%youtube 3iLHowULkU8 %}
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/"YOUR_VIDEO_ID"/0.jpg)](https://www.youtube.com/watch?v="3iLHowULkU8" "Futex")
 {%youtube nyMEjmVBgJs %}	
 {%youtube Gx80Wrej4nM %}
 <img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png" width="80%"/>
