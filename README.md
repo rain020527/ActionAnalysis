@@ -1,6 +1,13 @@
 # ActionAnalysis
 Sport action analysis can enable athletes to do more correct actions, but it takes too long to develop algorithms for each action. The action analysis framework is proposed to systematically evaluate the different types of sports actions. The entire framework consists of four structured modules, including data extraction, key frame detection, posture evaluation, and movement evaluation. Besides, integrate many common action features and encapsulate into functions to reduce development time. The framework is implemented on an application named CoachBox to evaluate the learner's action and increase sports learning effectiveness. This device can automatically analyze the action through deep learning without any sensor. In addition, a coordinate transform method is provided to convert skeleton coordinates to real-world coordinates for visualization.
+
+## Resource Link
+### Demo Video
+{%youtube 3iLHowULkU8 %}
+{%youtube nyMEjmVBgJs %}	
+{%youtube Gx80Wrej4nM %}
 <img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/system_framework.png" width="80%"/>
+
 
 ## Contects
 1. [File Description](#File-Description)
