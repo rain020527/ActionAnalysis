@@ -72,19 +72,17 @@ $ python3 main.py --camera_cfg ../../replay/20220616_134819/4/28124278.cfg --out
 The result will store in ../../replay/20220616_134819/4/CameraReaderL_Analyze/analyzeResult.json
 You can use the CoachBox replay feature to see the analysis result or check the json file.
 
-<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/UI.png" width="75%"/>
+- Key Frame Detection, Posture and Movement Evaluation
+In a series of actions, there are usually several time points that are representative. This study tries to identify these key frames automatically, and evaluate the posture and movement to measure whether the action is standard. 
+<img src=https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/Smash_framework.png" width="75%"/>
+
+- Analysis Result(json file)
+Can see the analysis result, such as the right knee angle is 148 degrees and the left knee angle is 163 degrees. Feet width vs shoulder width that can evaluate whether the start posture is wrong.                                                               
+<img src=https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/report.png" width="75%"/>
+
 
 ## Implement Different Action
 Such as high ball, you can implement the key frame detection algorithm and evalution algorithm by inheriting class VibePklParser. You need to implement two virtual function: 
 1. time_slice(), that is your key frame detection algorithm, and return the tuple of the key frame number.
 2. run(), that is the evaluation algorithm to analyze the postures and movements. You can also refer to the ActionAnalyst/High folder that we provide to implement the action analysis you want.
 
-## Court Coordinate System Transformation
-There is a function get3DSKP_court(self, fid, keypoint_idx) in VibePklParser.py. This function output 3D coordinate of pose keypoint in court coordinate space, and you just input the frame index and the keypoint index in self.getJointNames. The principle of this function is as follows: 
-
-<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/court_transform.png" width="70%"/>
-
-## The Result After Coordinate Transformation
-This is the result of court transform. The origin of the court coordinate system is at the center of the court, the short axis is X, the long axis is Y, the ground is Z, and 1 unit is 1 meter. So the coordinate of the people will fall around X=2.5, Y=6.7(has a little error), Z=human height.
-
-<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/transform_result.png" width="75%"/>
