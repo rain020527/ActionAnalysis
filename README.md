@@ -75,13 +75,13 @@ You can use the CoachBox replay feature to see the analysis result or check the 
 
 In a series of actions, there are usually several time points that are representative. This study tries to identify these key frames automatically, and evaluate the posture and movement to measure whether the action is standard.
 
-<img src=https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/Smash_framework.png" width="75%"/>
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/Smash_framework.png" width="75%"/>
 
 - Analysis Result(json file)
                                                                                                            
 Can see the analysis result, such as the right knee angle is 148 degrees and the left knee angle is 163 degrees. Feet width vs shoulder width that can evaluate whether the start posture is wrong.
                                                                                                            
-<img src=https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/report.png" width="75%"/>
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/report.png" width="75%"/>
 
 
 ## Implement Different Action
