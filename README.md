@@ -81,7 +81,7 @@ In a series of actions, there are usually several time points that are represent
                                                                                                            
 Can see the analysis result, such as the right knee angle is 148 degrees and the left knee angle is 163 degrees. Feet width vs shoulder width that can evaluate whether the start posture is wrong.
                                                                                                            
-<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/report.png" width="50%"/>
+<img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/report.png" width="25%" height="25%"/>
 
 
 ## Implement Different Action
