@@ -102,4 +102,5 @@ This project just only complete the evaluation algorithm of badminton backcourt 
 3. Modify the main.py running evaluation algorithm to your algorithm and change the threshold you need. Then you can execute and see the result in the json file.
 
 If you want to complete the analysis of other actions, such as rehabilitation or various ball games, you can also develop it yourself through this framework. The following image is the posture evaluation. Refer it to help design your own action analysis algorithm.
+
 <img src="https://github.com/rain020527/ActionAnalysis/blob/main/readme_img/posture_evaluation.png" width="60%"/>
