@@ -18,7 +18,7 @@ from VibePklParser import VibePklParser
 
 DIRNAME = os.path.dirname(os.path.abspath(__file__))
 
-class Backend_High_VibePklParser(VibePklParser):
+class Backhand_Cut_VibePklParser(VibePklParser):
     def __init__(self, balltype_dirname, pklFullPath, settings, src_videoname):
         super().__init__(balltype_dirname, pklFullPath, settings, src_videoname)
 
@@ -379,7 +379,7 @@ class Backend_High_VibePklParser(VibePklParser):
             return 0
 
 def main():
-    pklparser = Backend_High_VibePklParser(DIRNAME, sys.argv[1], sys.argv[2], sys.argv[3]) # pkl, camera cfg, src videoname
+    pklparser = Backhand_Cut_VibePklParser(DIRNAME, sys.argv[1], sys.argv[2], sys.argv[3]) # pkl, camera cfg, src videoname
     slice_pair = pklparser.time_slice()
     return slice_pair
 

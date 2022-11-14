@@ -4,7 +4,7 @@ import os
 import sys
 import logging
 
-from Backend_Smash_VibePklParser import Backend_Smash_VibePklParser
+from Backhand_Smash_VibePklParser import Backhand_Smash_VibePklParser
 
 DIRNAME = os.path.dirname(os.path.abspath(__file__))
 ROOTDIR = os.path.dirname(os.path.dirname(DIRNAME))
@@ -41,7 +41,7 @@ def main(args):
     strike_fid = int(int(args.fps)*1.5)
     for i in range(len(pkl_list)):
         logging.warning(f'vibe_pkl: {pkl_list[i]}\nsource_video: {video_list[i]}')
-        subprocess.call(f"python3 Backend_Smash_VibePklParser.py {pkl_list[i]} {args.camera_cfg} {video_list[i]}", shell=True)
+        subprocess.call(f"python3 Backhand_Smash_VibePklParser.py {pkl_list[i]} {args.camera_cfg} {video_list[i]}", shell=True)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

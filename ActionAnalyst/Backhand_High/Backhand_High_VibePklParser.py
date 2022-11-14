@@ -18,7 +18,7 @@ from VibePklParser import VibePklParser
 
 DIRNAME = os.path.dirname(os.path.abspath(__file__))
 
-class Backend_Smash_VibePklParser(VibePklParser):
+class Backhand_High_VibePklParser(VibePklParser):
     def __init__(self, balltype_dirname, pklFullPath, settings, src_videoname):
         super().__init__(balltype_dirname, pklFullPath, settings, src_videoname)
 
@@ -96,7 +96,7 @@ class Backend_Smash_VibePklParser(VibePklParser):
         df_camerareaderL = pd.read_csv(camerareaderL_path)
         video_start_frame = df_camerareaderL['Frame'][0]
         df_model3D = pd.read_csv(model3D_path)
-
+        ### find out T_strike
         ymax = -1000.0
         video_hit_frame = 0
         for i in range(df_model3D.shape[0]-1):
@@ -110,7 +110,6 @@ class Backend_Smash_VibePklParser(VibePklParser):
         else:
             self.speed = random.uniform(80, 130)
             logging.error('t_strike speed is random')
-
         tstrike_fid = int(video_hit_frame - video_start_frame)
         logging.debug(f'tstrike_fid: {tstrike_fid}')
 
@@ -174,8 +173,6 @@ class Backend_Smash_VibePklParser(VibePklParser):
             if self.get3DSKP_court(listidx, 4).tolist()[2] < rwrist_court_zmin:
                 rwrist_court_zmin = self.get3DSKP_court(listidx, 4).tolist()[2]
                 t_end = frameidx
-        if t_end == 0:
-            logging.debug("t_end error")
 
         self.t_start = t_start
         self.t_ready = t_ready
@@ -382,7 +379,7 @@ class Backend_Smash_VibePklParser(VibePklParser):
             return 0
 
 def main():
-    pklparser = Backend_Smash_VibePklParser(DIRNAME, sys.argv[1], sys.argv[2], sys.argv[3]) # pkl, camera cfg, src videoname
+    pklparser = Backhand_High_VibePklParser(DIRNAME, sys.argv[1], sys.argv[2], sys.argv[3]) # pkl, camera cfg, src videoname
     slice_pair = pklparser.time_slice()
     return slice_pair
 
